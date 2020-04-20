@@ -1,0 +1,23 @@
+<html>
+  <div class="container">   
+    <h2>Available Users:</h2>
+    <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>
+    <table class="table"> 
+      <thead>
+        <tr>
+          <th>UserId</th>
+          <th>Name</th>
+          <th>EmailId</th>
+        </tr>
+      </thead>
+      <tbody>     
+        <tr  *ngFor="let data of userData">
+          <td>{{data.userId}}</td>
+          <td>{{data.name}}</td>
+          <td>{{data.emailId}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</html>
